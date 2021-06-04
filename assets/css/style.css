@@ -1,0 +1,289 @@
+/* html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+} */
+
+
+h3{
+    font-size: 30px;
+  }
+  .bg-color{
+  /*   background: #FF416C;  
+  background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  
+  background: linear-gradient(to right, #FF4B2B, #FF416C);  */
+  
+  }
+#body{
+  background: #FF416C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height:100vh; 
+}
+
+
+  .br10{
+    border-radius: 10px;
+  }
+  .center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-bottom: 8rem;
+}
+      
+  
+  .shadow-10{
+          -webkit-box-shadow:0 20px 40px 0 rgba(0,0,0,.4)!important;
+          box-shadow: 0 20px 40px 0 rgba(0,0,0,.4)!important;
+      }
+  
+        .transition{
+          transition: .1s ease-in;
+          transform: scale(1.0);
+         
+       } 
+  
+     .btn-transition{
+       transition: all 0.25s ease-in 0s;
+       }
+       .transition:hover{
+        transform:scale(1.5);
+       }
+  
+       .copyright {
+          background-color: #1a252f;
+      }
+      .bt-0{
+          bottom: 0!important;
+      position: absolute;
+      width: 100%;
+      }
+
+
+
+
+
+
+
+      .swal2-show {
+        
+        box-shadow: 0 20px 40px 0 rgba(0,0,0,.4)!important;
+        border-radius: 2rem!important;
+    }
+      .swal-footer {
+        text-align: center!important;
+      }
+      
+      .swal-modal{
+        border-radius: 20px!important;
+        -webkit-box-shadow:0 20px 40px 0 rgba(0,0,0,.4)!important;
+        box-shadow: 0 20px 40px 0 rgba(0,0,0,.4)!important;
+      }
+      .swal-title{
+        /* font-weight: 700 !important; */
+          font-family: "Montserrat" !important;
+      }
+      /* 
+
+
+   /*heart*/
+/* 
+   
+
+      .heart{
+        position:absolute;
+        margin:auto;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        background-color:red;
+        height:50px;
+        width:50px;
+        animation: beat 1s infinite;
+        transform:rotate(-45deg);
+      }
+      
+      .heart:before{
+        content:"";
+        border-radius:50%;
+        background-color:red;
+        position:absolute;
+        top:-25px;
+        left:0;
+        height:50px;
+        width:50px;
+      }
+      
+      .heart:after{
+        content:"";
+        border-radius:50%;
+        background-color:red;
+        position:absolute;
+        top:0;
+        left:25px;
+        height:50px;
+        width:50px;
+      }
+      
+      @keyframes beat{
+        0%{
+          transform: scale(1) rotate(-45deg);
+        }
+        50%{
+          transform: scale(1.3) rotate(-45deg);
+        }
+        70%{
+          transform: scale(1.5) rotate(-45deg);
+        }
+      
+      }
+ */
+
+
+
+/*CORAZON PALPITANDO*/
+      .swal2-image {
+        filter: drop-shadow(5px 5px 8px #350e4c) saturate(3);
+        animation: latido 1.5s linear infinite;
+    }
+
+      @keyframes latido {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+
+
+    /*BTN PLAY PAUSE*/
+
+    .btnmusic{
+      border-radius: 50%;
+      padding: 1rem 1.4rem;
+     
+    }
+
+
+
+    @-moz-keyframes spin {  100% { -moz-transform: rotate(360deg); } }
+   @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+    .btn.play.active {
+
+   /*  border: 1px solid rgba(6, 250, 14, 1); */
+   background: #fff;
+   transition: all 1s;
+   animation: latido 1.5s linear infinite;
+      
+    }
+    .btn.play.active i.fas{
+      color: rgb(127, 160, 128);
+      transition: all 1s;
+    }  
+    
+    .btn.pause.active {
+ /*     border: 1px solid rgba(252, 145, 4, 1); */
+ background: #fff;
+ transition: all 1s;
+ animation: latido 1.5s linear infinite;
+    }
+    .btn.pause.active i.fas {
+      color: rgba(252, 145, 4, 1);
+      transition: all 1s;
+     
+    }
+
+    .btn-color{
+      background-color: #000;
+   /*    border: 1px solid  transparent; */
+      color: #fff;
+      outline: none;
+      position: relative;
+      transition: all 1s;
+    }
+
+
+    /*BTN POSITION FIXED*/
+    .btn-position{
+      right: .3rem;
+      bottom: 2.5rem;
+     
+    }
+    .fa-music{
+      -webkit-animation:spin 4s linear infinite;
+      -moz-animation:spin 4s linear infinite;
+      animation:spin 4s linear infinite;
+    }
+
+
+
+
+    /*BUTTON MOBILE */
+
+
+
+  /*FLOATING BUTTON COLOR*/
+
+  
+/* fixed side social buttons */
+#buttonfloating a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -55px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 0px; /* 15px padding */
+  width: 60px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  margin-top: 3%;
+  position: fixed;
+  z-index: 1;
+
+}
+
+#buttonfloating a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+/* The about link: 20px from the top with a green background */
+#buttonfloating .fa-magic{
+/*   margin-left: 0px; */
+  font-size: 30px;
+
+}
+
+
+
+/* Make the icon Spin OPTIONAL */
+
+.fa-magic {
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Safari and Chrome */
+  -o-transform: rotate(0deg); /* Opera */
+  -moz-transform: rotate(0deg); /* Firefox */
+  transform: rotate(0deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.fa-magic:hover{
+  -ms-transform: rotate(360deg); /* IE 9 */
+  -webkit-transform: rotate(360deg); /* Safari and Chrome */
+  -o-transform: rotate(360deg); /* Opera */
+  -moz-transform: rotate(360deg); /* Firefox */
+  transform: rotate(360deg);
+  transition: all 0.3s;
+}
